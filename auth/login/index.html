@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../accident-svgrepo-com.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom colors */
+        .bg-island-green {
+            background-color: #2BAE66FF;
+        }
+
+        .text-island-green {
+            color: #2BAE66FF;
+        }
+
+        .border-island-green {
+            border-color: #2BAE66FF;
+        }
+
+        .focus\:border-island-green:focus {
+            border-color: #2BAE66FF;
+        }
+
+        .focus\:ring-island-green:focus {
+            box-shadow: 0 0 0 3px rgba(43, 174, 102, 0.5);
+        }
+
+        .bg-white-custom {
+            background-color: #FCF6F5FF;
+        }
+
+        .text-white-custom {
+            color: #FCF6F5FF;
+        }
+
+        .border-white-custom {
+            border-color: #FCF6F5FF;
+        }
+
+        .focus\:border-white-custom:focus {
+            border-color: #FCF6F5FF;
+        }
+
+        .focus\:ring-white-custom:focus {
+            box-shadow: 0 0 0 3px rgba(252, 246, 245, 0.5);
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-island-green">
+    <div class="mt-10 w-full max-w-sm p-4 bg-white-custom border border-island-green rounded-lg shadow sm:p-6 md:p-8">
+        <form id="loginForm" class="space-y-6" action="#">
+            <h5 class="text-xl font-medium text-island-green">Sign in to our platform</h5>
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-island-green">Your email</label>
+                <input type="email" name="email" id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-island-green focus:border-island-green block w-full p-2.5"
+                    placeholder="email@gmail.com" required />
+            </div>
+            <div>
+                <label for="password" class="block mb-2 text-sm font-medium text-island-green">Your password</label>
+                <input type="password" name="password" id="password" placeholder="••••••••"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-island-green focus:border-island-green block w-full p-2.5"
+                    required />
+            </div>
+            <div class="flex items-start">
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="remember" type="checkbox" value=""
+                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-island-green"
+                            required />
+                    </div>
+                    <label for="remember" class="ms-2 text-sm font-medium text-island-green">Remember me</label>
+                </div>
+            </div>
+            <button type="submit"
+                class="w-full text-white-custom bg-island-green hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login
+                to your account</button>
+            <div class="text-sm font-medium text-island-green">
+                Not registered? <a href="../sign-up/index.html" class="text-island-green hover:underline">Create
+                    account</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="login.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>

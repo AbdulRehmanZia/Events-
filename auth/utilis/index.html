@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="shortcut icon" href="../accident-svgrepo-com.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            position: relative;
+            top: 0;
+            width: 100%;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200 min-h-screen flex flex-col">
+
+    <nav class="bg-[#2BAE66FF] border-b-4 border-[#2BAE66FF] navbar">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+            <p class="text-black text-4xl font-bold font-sans"><i>ARZ Events</i></p>
+            <div class="flex items-center space-x-6 rtl:space-x-reverse">
+                <span id="createMyEventsBtn">
+                    <a href="../myEvents/index.html" class="text-lg font-bold text-[#FCF6F5FF] hover:underline hover:text-black">My Events</a>
+                </span>
+                <span id="createEventsButton">
+                    <a href="../user events/index.html" class="text-lg font-bold text-[#FCF6F5FF] hover:underline hover:text-black">Create Events</a>
+                </span>
+                <img id="loginImg" class="h-12 w-12 bg-black rounded-full p-1" src="https://t4.ftcdn.net/jpg/05/89/93/27/360_F_589932782_vQAEAZhHnq1QCGu5ikwrYaQD0Mmurm0N.jpg" alt="user-img">
+                <a href="../login/index.html" id="loginLink" class="text-lg font-bold text-[#FCF6F5FF] hover:underline hover:text-black">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="eventsCardContainer" class="container mx-auto p-5 flex flex-row flex-wrap justify-center items-center gap-6">
+        <!-- Event cards will be injected here -->
+    </div>
+
+    <div class="button-container">
+        <button id="logoutBtn" class="px-4 py-2 bg-[#2BAE66FF] mb-8 text-[#FCF6F5FF] rounded hover:bg-[#249653FF]">Logout</button>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>

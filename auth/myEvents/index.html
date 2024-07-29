@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Events</title>
+    <link rel="shortcut icon" href="../accident-svgrepo-com.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#FCF6F5FF] min-h-screen flex flex-col bg-gray-200">
+
+    <nav class="bg-[#2BAE66FF] border-b-4 border-[#2BAE66FF]">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+            <p class="text-black text-4xl font-bold font-sans "><i>ARZ Events</i></p>
+            <div class="flex items-center space-x-6 rtl:space-x-reverse">
+                <a href="../utilis/index.html" class="text-lg text-[#FCF6F5FF] font-bold hover:underline hover:text-black ">All Events</a>
+                <a href="../user events/index.html" class="text-lg text-[#FCF6F5FF] font-bold hover:underline hover:text-black">Create Events</a>
+                <a href="../user profile/user-profile.html">
+                    <img id="loginImg" class="h-12 w-12 bg-black rounded-full p-1" src="https://t4.ftcdn.net/jpg/05/89/93/27/360_F_589932782_vQAEAZhHnq1QCGu5ikwrYaQD0Mmurm0N.jpg" alt="user-img">
+                </a>
+                <a href="../login/index.html" id="loginLink" class="text-lg text-[#FCF6F5FF] font-bold hover:underline hover:text-black">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="eventsCardContainer" class="container mx-auto p-5 flex flex-row flex-wrap justify-center items-center gap-6">
+        <!-- Event cards will be injected here -->
+    </div>          
+
+    <script type="module" src="./my-events.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
